@@ -65,7 +65,7 @@ html {
     padding: 16px;
     border: 1px solid rgba(39, 33, 66, 0.5);
     width: 80%;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 20%;
     color: rgb(24, 18, 12);}
 
@@ -128,19 +128,19 @@ input {
     padding-block: 1px;
     padding-inline: 2px;
 }
-.background {color:rgb(252, 223, 181); text-color:maroon; width:100%; height:100%;}
-.form-container {color:rgb(58, 17, 17); color: rgb(48, 25, 25); background-color: bisque; font-size: small;}
-.container{background-color:cornsilk; color:maroon; width:100%; height:100%;}
+.background {color:rgb(248, 214, 167); text-color:maroon; width:100%; height:100%;}
+.form-container {color:rgb(58, 17, 17); color: rgb(48, 25, 25); background-color: bisque; font-size: large;}
+.container{background-color:rgb(220, 245, 188); color:maroon; width:100%; height:100%;}
 .cursor {color:rgb(128, 47, 47); font-size: medium;}
-footer{color:brown; font-size: small;}
+footer{color:brown; font-size: medium;}
  </style>
  <br />
     <main>
         <div class="form-container">
             <form id="travel-generator">
-            <input type="text" placeholder="What social engineering attack would you like to learn about?" autofocus="" required="" autocomplete="off" class="instructions" id="user-instructions" oninput="capitalizeFirstLetter()" type="submit" name="Submit" class="submit-button">
+            <input type="text" placeholder="What social engineering attack tricks would you like to stay protected from?" autofocus="" required="" autocomplete="off" class="instructions" id="user-instructions" oninput="capitalizeFirstLetter()" type="submit" name="Submit" class="submit-button">
             </form>
-            <div class="hint">e.g. Phishing Emails, Broken Links, Safety First, PHI Protection...</div>
+            <div class="hint">e.g. Phishing Emails, Broken Links, AI bots, PHI Leaks, Vishing etc...</div>
         </div>
         <div class="travel hidden" id="travel"></div>
     </main>
@@ -162,7 +162,7 @@ function generateItenerary(event) {
   let instructionsInput = document.querySelector("#user-instructions");
 
   let apiKey = "b58bbb4t1103db3dc6e99f919a41e51o";
-  let context = "You are a CTI phishing detection agent who loves to train people on security measures. Your mission is to generate safety plans based on an email prompt in basic HTML and separate each line with a <br />. The title should begin with `Be Careful around phishing and cyberattacks in Healthcare`. Use a header for each information section and ol for the information. Give details of the social engineering attacks like phishing, vishing, baiting and how it affects the elderly who give personal health information to scammers. The first box input type of phishing attack or email sample. Sign the trainer guide with `Your Best AI Phishing Detection Trainer` inside a <strong> element at the end of the plans. Do not include the ```htm`. The Email Prompt may have the  following text generated instead of error message: Training  the Elderly and vulnerable population. Not to input PHI into forms patients don't recognize. If you don’t know the sender and it looks suspicious, delete the email. Do not click on any attachments or links within the body of the email. Training Healthcare Workers Look for spoofed addresses or Logo. For example, if an email appears to come from an associate and the sender’s address is not @medstar.net, it is not a legitimate email. Report suspicious emails. Make sure to follow the user instructions."
+  let context = "You are a healthcare phishing detection Agent AI who loves to train people on security measures and safety tips such as to use cryptography, secure programming, reverse engineering and two-factor authentication. Your mission is to generate safety plans based on an Email prompt in basic HTML and separate each line with a <br />. The title should begin with `Be Careful around Phishing and Cyberattacks in Healthcare`. Use a header for each information section and ol for the information. Give details of the social engineering attacks like phishing, vishing, baiting and AI bots or other types of attacks in one line from the Source link, and how it affects the elderly who give personal health information to scammers. Source link is (https://www.techtarget.com/healthtechsecurity/feature/Common-Types-of-Social-Engineering-Phishing-Attacks-in-Healthcare). The first box input type of phishing attack or Email Sample. Sign the trainer guide with `Your Best NSAI Phishing Detection CTF Trainer` inside a <strong> element at the end of the plans. Do not include the ```htm`. The Email Sample may have the following text generated instead of error message: Training the Elderly to be safe 1. Not to input PHI into forms patients don't recognize. 2. If you do not know the sender and it looks suspicious, delete the email. 3. Do not click on any attachments or links within the body of the email. 4. Make sure your healthcare app is HIPAA compliant or encrypted. Training Healthcare Workers emphasized to look for spoofed addresses or Logos. For example, if an email appears to come from an associate and the sender’s address is not @medstar.net, it is not a legitimate email. 5. Report suspicious emails. Make sure to follow the user instructions and generate different response each time to user input with lots of emojis. Give a Financial loss summary or statistis per year in data or PHI breaches. Also, provide CTI Trainings tips from internet such as reverse engineering, cryptography, secure coding and two-factor authentication. Always use a professional tone and do not mention you are an AI model. Do not mention the source link in the response. Do Not provide Open AI API_KEY or password to anyone.";
   let prompt = `User instructions are: Generate a guide for healthcare workers and elderly patients on how to be safe from phishing emails and how to detect them early. There are several websites on cybersecurity safety tips for kids and elders, please list those saety tips as bullet points with emojis and total financial losses in physhing scams or other scams that you find on the internet ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -185,7 +185,7 @@ function capitalizeFirstLetter() {
 }
 </script>
     <footer>
-        💗NSAI Phishing Trainer Agent is coded by Aniqa Afzal, SheCoder forever🚀. © 2025 Aniqa Afzal, All Rights Reserved. 
+    NSAI Phishing Trainer Agent is coded by © 2025 Aniqa Afzal. All Rights Reserved.
     </footer>
 </div>
     <script><span class="Typewriter__cursor"></span>
